@@ -6,8 +6,7 @@
     class GFG
     {
 
-        // Returns sum of maximum even sum
-        // subsequence
+        // Returns sum of maximum even sum subsequence
         static int maxEvenSum(List<int> arr, int n)
         {
 
