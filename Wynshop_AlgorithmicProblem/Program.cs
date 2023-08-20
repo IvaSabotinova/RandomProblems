@@ -1,17 +1,7 @@
 ﻿namespace Wynshop_AlgorithmicProblem
 {
-    // C# program to find longest
-    // even sum subsequence.
-    using System;
-
-    //    The approach to the problem can be shorted down to points:
-
-    //1.Sum up all positive numbers
-    //2. If the sum is even then that will be the max sum possible
-    //3. If the sum is not even then either subtract a positive odd number from it, or add a negative odd.
-    //-Find maximum max odd of negative odd numbers, hence sum+a[I] (as a[I] is itself negative) 
-    //-Find minimum min odd of positive odd numbers, hence sum-a[I]. 
-    //-The maximum of the both the results will be the answer.
+  
+    using System;    
 
     class GFG
     {
@@ -31,17 +21,14 @@
                 }                    
             }                
 
-            // If sum is even, it is our
-            // answer
+            // If sum is even, it is our answer
             if (pos_sum % 2 == 0)
             {
                 return pos_sum;
             }                
 
-            // Traverse the array to find the
-            // maximum sum by adding a
-            // positive odd or subtracting a
-            // negative odd
+            // Traverse the array to find the maximum sum by adding a
+            // positive odd or subtracting a negative odd
             int ans = int.MinValue;
 
             for (int i = 0; i < n; ++i)
